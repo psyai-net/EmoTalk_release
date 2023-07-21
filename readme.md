@@ -26,7 +26,12 @@ Official PyTorch implementation for the paper:
 - Blender 3.4.1
 - ffmpeg 4.4.1
 
-
+Clone the repo:
+  ```bash
+  git clone https://github.com/psyai-net/EmoTalk_release.git
+  cd EmoTalk_release
+  ```  
+Create conda environment:
 ```bash
 conda create -n emotalk python=3.8.8
 conda activate emotalk
@@ -42,10 +47,10 @@ wget https://mirror.freedif.org/blender/release/Blender3.4/blender-3.4.1-linux-x
 tar -xf blender-3.4.1-linux-x64.tar.xz
 mv blender-3.4.1-linux-x64 blender && rm blender-3.4.1-linux-x64.tar.xz
 ```
-Download the pretrained models from [EmoTalk.pth]() . Put the pretrained models under `pretrain_model` folder. 
+Download the pretrained models from [EmoTalk.pth](https://drive.google.com/file/d/1gMWRI-w4NJlvWuprvlUUpdkt6Givy_em/view?usp=drive_link) . Put the pretrained models under `pretrain_model` folder. 
 Put the audio under `aduio` folder and run
 ```bash
-python demo.py --wav_path "./audio/angry.wav"
+python demo.py --wav_path "./audio/disgust.wav"
 ```
 The generated animation will be saved in `result` folder.
 
