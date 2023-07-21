@@ -80,12 +80,20 @@ Here are some great resources we benefit:
 Thanks to John Hable for sharing his head template under the CC0 license, which is very helpful for us to visualize the results.
 
 ## **Contact**
-For questions, please contact pengziqiao@ruc.edu.cn
+For research purpose, please contact pengziqiao@ruc.edu.cn
 
 For commercial licensing, please contact fanzhaoxin@psyai.net
 
 ## **License**
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please read the [LICENSE](LICENSE) file for more information.
+
+## Invitation
+
+We invite you to join [Psyche AI Inc](https://www.psyai.com/home) to conduct cutting-edge research and business implementation together. At Psyche AI Inc, we are committed to pushing the boundaries of what's possible in the fields of artificial intelligence and computer vision, especially their applications in avatars. As a member of our team, you will have the opportunity to collaborate with talented individuals, innovate new ideas, and contribute to projects that have a real-world impact.
+
+If you are passionate about working on the forefront of technology and making a difference, we would love to hear from you. Please visit our website at [Psyche AI Inc](https://www.psyai.com/home) to learn more about us and to apply for open positions. You can also contact us by fanzhaoxin@psyai.net.
+
+Let's shape the future together!!
 
 
 
