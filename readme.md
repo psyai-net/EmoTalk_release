@@ -62,7 +62,7 @@ Coming soon...
 If you find this work useful for your research, please cite our paper:
 ```
   @inproceedings{peng2023emotalk,
-    title={EmoTalk: Speech-driven emotional disentanglement for 3D face animation}, 
+    title={EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation}, 
     author={Ziqiao Peng and Haoyu Wu and Zhenbo Song and Hao Xu and Xiangyu Zhu and Hongyan Liu and Jun He and Zhaoxin Fan},
     journal={arXiv preprint arXiv:2303.11089},
     year={2023}
@@ -87,7 +87,7 @@ For commercial licensing, please contact fanzhaoxin@psyai.net
 ## **License**
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please read the [LICENSE](LICENSE) file for more information.
 
-## Invitation
+## **Invitation**
 
 We invite you to join [Psyche AI Inc](https://www.psyai.com/home) to conduct cutting-edge research and business implementation together. At Psyche AI Inc, we are committed to pushing the boundaries of what's possible in the fields of artificial intelligence and computer vision, especially their applications in avatars. As a member of our team, you will have the opportunity to collaborate with talented individuals, innovate new ideas, and contribute to projects that have a real-world impact.
 
