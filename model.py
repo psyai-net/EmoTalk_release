@@ -23,7 +23,6 @@ class EmoTalk(nn.Module):
             "r-f/wav2vec-english-speech-emotion-recognition")
         self.audio_encoder_emo.wav2vec2.feature_extractor._freeze_parameters()
         self.max_seq_len = args.max_seq_len
-        self.emo_guide = args.emo_guide
         self.audio_feature_map_cont = nn.Linear(1024, 512)
         self.audio_feature_map_emo = nn.Linear(1024, 832)
         self.audio_feature_map_emo2 = nn.Linear(832, 256)
@@ -94,17 +93,10 @@ class EmoTalk(nn.Module):
 
         memory_mask11 = enc_dec_mask(self.device, hidden_states11.shape[1], hidden_states11.shape[1])
         memory_mask12 = enc_dec_mask(self.device, hidden_states12.shape[1], hidden_states12.shape[1])
-        if self.emo_guide:
-            bs_out11 = self.transformer_decoder(hidden_states11, hidden_states_emo11_832, tgt_mask=tgt_mask11,
-                                                memory_mask=memory_mask11)
-            bs_out12 = self.transformer_decoder(hidden_states12, hidden_states_emo12_832, tgt_mask=tgt_mask22,
-                                                memory_mask=memory_mask12)
-        else:
-            bs_out11 = self.transformer_decoder(hidden_states11, hidden_states11, tgt_mask=tgt_mask11,
-                                                memory_mask=memory_mask11)
-            bs_out12 = self.transformer_decoder(hidden_states12, hidden_states12, tgt_mask=tgt_mask22,
-                                                memory_mask=memory_mask12)
-
+        bs_out11 = self.transformer_decoder(hidden_states11, hidden_states_emo11_832, tgt_mask=tgt_mask11,
+                                            memory_mask=memory_mask11)
+        bs_out12 = self.transformer_decoder(hidden_states12, hidden_states_emo12_832, tgt_mask=tgt_mask22,
+                                            memory_mask=memory_mask12)
         bs_output11 = self.bs_map_r(bs_out11)
         bs_output12 = self.bs_map_r(bs_out12)
 
@@ -145,12 +137,8 @@ class EmoTalk(nn.Module):
                          :hidden_states11.shape[1]].clone().detach().to(device=self.device)
 
         memory_mask11 = enc_dec_mask(self.device, hidden_states11.shape[1], hidden_states11.shape[1])
-        if self.emo_guide:
-            bs_out11 = self.transformer_decoder(hidden_states11, hidden_states_emo11_832, tgt_mask=tgt_mask11,
-                                                memory_mask=memory_mask11)
-        else:
-            bs_out11 = self.transformer_decoder(hidden_states11, hidden_states11, tgt_mask=tgt_mask11,
-                                                memory_mask=memory_mask11)
+        bs_out11 = self.transformer_decoder(hidden_states11, hidden_states_emo11_832, tgt_mask=tgt_mask11,
+                                            memory_mask=memory_mask11)
         bs_output11 = self.bs_map_r(bs_out11)
 
         return bs_output11

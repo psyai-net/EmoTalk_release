@@ -97,7 +97,6 @@ def main():
     parser.add_argument("--model_path", type=str, default="./pretrain_model/EmoTalk.pth",
                         help='path of the trained models')
     parser.add_argument("--result_path", type=str, default="./result/", help='path of the result')
-    parser.add_argument("--emo_guide", type=bool, default=True, help='whether to use emotion guide')
     parser.add_argument("--max_seq_len", type=int, default=5000, help='max sequence length')
     parser.add_argument("--num_workers", type=int, default=0)
     parser.add_argument("--batch_size", type=int, default=1)
