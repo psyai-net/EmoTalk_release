@@ -6,7 +6,7 @@ Official PyTorch implementation for the paper:
 
 > **EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation**, ***ICCV 2023***.
 >
-> Ziqiao Peng, Haoyu Wu, Zhenbo Song, Hao Xu, Xiangyu Zhu, Hongyan Liu, Jun He, Zhaoxin Fan
+> Ziqiao Peng, Haoyu Wu, Zhenbo Song, Hao Xu, Xiangyu Zhu, Jun He, Hongyan Liu, Zhaoxin Fan
 >
 > <a href='https://arxiv.org/abs/2303.11089'><img src='https://img.shields.io/badge/arXiv-2303.11089-red'></a> <a href='https://ziqiaopeng.github.io/emotalk/'><img src='https://img.shields.io/badge/Project-Video-Green'></a> [![License ↗](https://img.shields.io/badge/License-CCBYNC4.0-blue.svg)](LICENSE)
 
@@ -47,7 +47,7 @@ wget https://mirror.freedif.org/blender/release/Blender3.4/blender-3.4.1-linux-x
 tar -xf blender-3.4.1-linux-x64.tar.xz
 mv blender-3.4.1-linux-x64 blender && rm blender-3.4.1-linux-x64.tar.xz
 ```
-Download the pretrained models from [EmoTalk.pth](https://drive.google.com/file/d/1gMWRI-w4NJlvWuprvlUUpdkt6Givy_em/view?usp=drive_link) . Put the pretrained models under `pretrain_model` folder. 
+Download the pretrained models from [EmoTalk.pth](https://drive.google.com/file/d/1KQZ-WGI9VDFLqgNXvJQosKVCbjTaCPqK/view?usp=drive_link) (Updated). Put the pretrained models under `pretrain_model` folder. 
 Put the audio under `aduio` folder and run
 ```bash
 python demo.py --wav_path "./audio/disgust.wav"
@@ -56,14 +56,14 @@ The generated animation will be saved in `result` folder.
 
 
 ## **Dataset**
-Coming soon...
+If someone wants to download the 3D-ETF dataset, please fill in the [agreement](https://drive.google.com/file/d/1AQ5_focSgw9WiJdA2R44BQOrdTUe2ABd/view?usp=drive_link), and use the education mailbox to email Ziqiao Peng (pengziqiao@ruc.edu.cn) and cc Zhaoxin Fan (fanzhaoxin@psyai.net) to request the download link.
 
 ## **Citation**
 If you find this work useful for your research, please cite our paper:
 ```
   @inproceedings{peng2023emotalk,
     title={EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation}, 
-    author={Ziqiao Peng and Haoyu Wu and Zhenbo Song and Hao Xu and Xiangyu Zhu and Hongyan Liu and Jun He and Zhaoxin Fan},
+    author={Ziqiao Peng and Haoyu Wu and Zhenbo Song and Hao Xu and Xiangyu Zhu and Jun He and Hongyan Liu and Zhaoxin Fan},
     journal={arXiv preprint arXiv:2303.11089},
     year={2023}
   }
@@ -80,7 +80,7 @@ Here are some great resources we benefit:
 Thanks to John Hable for sharing his head template under the CC0 license, which is very helpful for us to visualize the results.
 
 ## **Contact**
-For research purpose, please contact pengziqiao@ruc.edu.cn
+For research purpose, such as comparison of experimental results, please contact pengziqiao@ruc.edu.cn
 
 For commercial licensing, please contact fanzhaoxin@psyai.net
 
