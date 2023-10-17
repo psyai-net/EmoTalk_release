@@ -27,22 +27,21 @@ RUN \
     # zsh option
     chsh -s /bin/zsh  && \
     sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  && \
-    # zsh-autosuggestions, zsh-syntax-highlighting을 플러그인에 추가하는 코드
+    # add zsh-autosuggestions, zsh-syntax-highlighting plugin
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions  && \
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting  && \
-    # Perl이란? : https://happygrammer.github.io/guide/perl/
-    # 펄을 활용하면 vi ~/.zshrc를 해서 직접 수정해야하는 부분이 자동화가 가능하다!!
+    # Modify .zshrc whth Perl
     perl -pi -w -e 's/ZSH_THEME=.*/ZSH_THEME="af-magic"/g;' ~/.zshrc  && \
     perl -pi -w -e 's/plugins=.*/plugins=(git ssh-agent zsh-autosuggestions zsh-syntax-highlighting)/g;' ~/.zshrc  && \
-    # ssh에서 id:password를 설정합니다. 디폴트로 id = root, password = root으로 했습니다.
-    # 보안을 위해 바꾸는 걸 추천합니다.
-    # PermitRootLogin : 디폴트값을 yes로 해줘야 ssh 연결에서 문제가 안생깁니다.
+    # Set ssh id and password, default is id = root, password = root.
+    # I recommand changing this for more security
+    # PermitRootLogin : yes - for ssh connection
     echo 'root:root' |chpasswd  && \
     sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config  && \
     sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config  && \
     mkdir /root/.ssh  && \
     mkdir /var/run/sshd   && \
-    # 경우에 따라 시간대가 안맞는 에러가 발생해서, 이 코드는 웬만하면 넣는게 좋습니다.
+    # install language pack for timeline issue.
     apt-get install -y language-pack-en && update-locale  && \
     # Clean up
     apt-get clean  && \
