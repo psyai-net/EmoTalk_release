@@ -61,12 +61,14 @@ If someone wants to download the 3D-ETF dataset, please fill in the [agreement](
 ## **Citation**
 If you find this work useful for your research, please cite our paper:
 ```
-  @inproceedings{peng2023emotalk,
-    title={EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation}, 
-    author={Ziqiao Peng and Haoyu Wu and Zhenbo Song and Hao Xu and Xiangyu Zhu and Jun He and Hongyan Liu and Zhaoxin Fan},
-    journal={arXiv preprint arXiv:2303.11089},
-    year={2023}
-  }
+@InProceedings{Peng_2023_ICCV,
+    author    = {Peng, Ziqiao and Wu, Haoyu and Song, Zhenbo and Xu, Hao and Zhu, Xiangyu and He, Jun and Liu, Hongyan and Fan, Zhaoxin},
+    title     = {EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {20687-20697}
+}
 ```
 
 ## **Acknowledgement**
