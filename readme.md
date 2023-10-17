@@ -17,7 +17,8 @@ Official PyTorch implementation for the paper:
 </p>
 
 > Given audio input expressing different emotions, EmoTalk produces realistic 3D facial animation sequences with corresponding emotional expressions as outputs.
-
+## News
+- `2023.10.17` Thanks to [noirmist](https://github.com/noirmist)! Now you can create environments via docker.
 ## Environment
 
 - Linux
