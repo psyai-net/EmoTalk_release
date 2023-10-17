@@ -8,7 +8,8 @@ Official PyTorch implementation for the paper:
 >
 > Ziqiao Peng, Haoyu Wu, Zhenbo Song, Hao Xu, Xiangyu Zhu, Jun He, Hongyan Liu, Zhaoxin Fan
 >
-> <a href='https://arxiv.org/abs/2303.11089'><img src='https://img.shields.io/badge/arXiv-2303.11089-red'></a> <a href='https://ziqiaopeng.github.io/emotalk/'><img src='https://img.shields.io/badge/Project-Video-Green'></a> [![License ↗](https://img.shields.io/badge/License-CCBYNC4.0-blue.svg)](LICENSE)
+>  [Arxiv](https://arxiv.org/abs/2303.11089) | [Project Page](https://ziqiaopeng.github.io/emotalk/) | [License](https://github.com/psyai-net/EmoTalk_release/blob/main/LICENSE)
+
 
 
 <p align="center">
